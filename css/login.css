@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Acme&family=Lobster&family=Lora:ital,wght@1,500&family=Play&family=Rajdhani:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Croissant+One&family=Gasoek+One&family=Lobster&family=Lora:ital,wght@1,500&family=Notable&family=Open+Sans:wght@300;400&family=Play&family=Poppins:wght@300&family=Rajdhani:wght@300;700&display=swap');
 
 * {
     margin: 0;
@@ -12,11 +12,14 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url('./../images/sports-tools.jpg') no-repeat;
+    background: #c31432;
+    background: -webkit-linear-gradient(to right, #240b36, #c31432); 
+    background: linear-gradient(to right, #240b36, #c31432);
     background-size: cover;
     background-position: center;
     margin: 0;
     position: relative;
+    overflow: hidden;
 }
 
 body::before {
@@ -30,7 +33,46 @@ body::before {
     z-index: -1;
 }
 
+.sliding-text {
+    font-size: 100px;
+    font-family: 'Notable', sans-serif;
+    white-space: nowrap;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-right: 50vw;
+    transform: translateX(-100%);
+    animation: slideText 8s linear infinite;
+    color: orangered;
+    z-index: -1;
+}
+
+@keyframes slideText {
+    0% {
+        transform: translateX(0%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+
+.logo {
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin-right: 10px;
+    padding: 10px; /* Adjust padding as needed */
+    z-index: 999; /* Adjust the z-index as needed */
+}
+
+.logo img {
+    max-width: 100px;
+    height: auto; /* Ensures the logo scales proportionally */
+    display: block;
+}
 .wrapper {
+    line-height: 2px;
     justify-content: center;
     align-items: center;
     width: 90%;
@@ -48,6 +90,7 @@ body::before {
 .wrapper h1 {
     font-size: 28px;
     text-align: center;
+    padding: 20px;
 }
 
 .input-box {
@@ -159,5 +202,13 @@ body::before {
 
     .input__icon {
         font-size: 18px;
+    }
+
+    .logo img{
+        max-width: 80px;
+    }
+    
+    .sliding-text{
+        font-size: 75px;
     }
 }

@@ -10,6 +10,19 @@
 
 </head>
 <body>
+    <div class="sliding-text">
+        <span>OJUS 2K24  OJUS 2K24  OJUS 2K24  OJUS 2K24  OJUS 2K24  OJUS 2K24 &nbsp;</span><br>
+        <span>S 2K24  OJUS 2K24  OJUS 2K24  OJUS 2K24  OJUS 2K24  OJUS 2K24 OJU&nbsp;</span><br>
+        <span>24  OJUS 2K24  OJUS 2K24  OJUS 2K24  OJUS 2K24  OJUS 2K24 OJUS 2K&nbsp;</span><br>
+        <span> 2K24  OJUS 2K24  OJUS 2K24  OJUS 2K24  OJUS 2K24  OJUS 2K24 OJUS&nbsp;</span><br>
+        <span>K24  OJUS 2K24  OJUS 2K24  OJUS 2K24  OJUS 2K24  OJUS 2K24 OJUS 2&nbsp;</span><br>
+        <span>OJUS 2K24  OJUS 2K24  OJUS 2K24  OJUS 2K24  OJUS 2K24  OJUS 2K24 &nbsp;</span><br>
+        <span>US 2K24  OJUS 2K24  OJUS 2K24  OJUS 2K24  OJUS 2K24  OJUS 2K24 OJ&nbsp;</span><br>
+        <span>4  OJUS 2K24  OJUS 2K24  OJUS 2K24  OJUS 2K24  OJUS 2K24 OJUS 2K2&nbsp;</span><br>
+    </div>//
+    <div class="logo" >
+    <img src="./images/logo.png" alt="ojus-logo" >
+    </div>
     <div class="wrapper">
         <form action="">
             <h1>Login </h1>
@@ -20,7 +33,7 @@
                 <input class="password" type="password" id="password" name="password" placeholder="DD-MM-YYYY" required>
                 <span class="input__icon-wrapper">
                     <i class="input__icon ri-eye-off-line"></i>
-                  </span>
+                  </span><br>
                 <div id="password-feedback"></div>
             </div>
             <div class="submit">
@@ -41,5 +54,20 @@
         });
 
     </script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+    var windowHeight = window.innerHeight;
+    var numberOfLines = Math.floor(windowHeight / 120);
+
+    var slidingText = document.querySelector('.sliding-text');
+    slidingText.style.left = '-100%';
+    slidingText.style.top = 'calc(50% - ' + (numberOfLines * 65) + 'px)';
+    slidingText.style.animationDuration = numberOfLines * 4 + 's';
+    slidingText.style.animationIterationCount = 'infinite';
+});
+
+
+</script>
 </body>
 </html>
