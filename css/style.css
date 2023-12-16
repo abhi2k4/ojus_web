@@ -28,7 +28,7 @@ nav{
 }
 .logo{
     width: 100px;
-    border-radius: 100px;
+    border-radius: 50%;
     box-shadow: 10px 10px 20px black;
 
     
@@ -42,7 +42,7 @@ nav{
     margin-left: 10px;
     color: transparent;
     -webkit-text-stroke:1px #fff ;
-    background: url(back1.png);
+    background: url(/images/back1.png);
     -webkit-background-clip: text;
     background-position: 0 0;
     animation: back 4s linear infinite;
@@ -104,4 +104,14 @@ button {
 .socail-icon ul li{
     list-style: none;
     margin: 0 15px;
+}
+@media screen and (max-width: 600px){
+    .logo{
+        max-width: 50%;
+    }
+
+    .logo img{
+        max-width: 50px;
+    }
+    
 }
