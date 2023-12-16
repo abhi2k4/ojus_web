@@ -17,6 +17,7 @@ body {
     background-position: center;
     margin: 0;
     position: relative;
+    overflow: hidden;
 }
 
 body::before {
@@ -36,6 +37,7 @@ body::before {
     position: absolute;
     top: 50%;
     left: 0;
+    white-space: nowrap;
     margin-right: 50vw;
     transform: translateX(-100%);
     animation: slideText 8s linear infinite;
