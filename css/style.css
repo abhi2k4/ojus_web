@@ -7,7 +7,6 @@
 }
 body{
     display: flex;
-    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     margin: 0%;
@@ -16,7 +15,7 @@ body{
     background-color: rgb(197, 177, 160);
     background-size: cover;
     background-position: center;
-    
+    flex-direction: column;
 }
 nav{
     width: 100%;
@@ -37,7 +36,8 @@ nav ul li a{
     text-decoration: none;
     color: #080404;
     font-size: 17px;
-    font-weight: 700;
+    font-weight: 700;
+    
 }
 #home-section{
     position: relative;
@@ -55,9 +55,8 @@ nav ul li a{
     top: 0;
     right: 0;
     background-color: #070606;
-    box-shadow: 10px 10px 20px black;
+    box-shadow: 10px 10px 20px black;
 }
-
 .content{
     text-align: center;
 }
@@ -96,9 +95,14 @@ nav ul li a{
     z-index: -1;
 
 }
-
-
 @media  (min-aspect-ratio:16/9){
+    .back-video{
+        width: 100%;
+        height: auto;
+    }
+    
+}
+@media  (max-aspect-ratio:16/9){
     .back-video{
         width: 100%;
         height: auto;
@@ -134,4 +138,7 @@ button {
         max-width: 50px;
     }
     
+}
+.section-2 h1{
+    text-align: center;
 }
