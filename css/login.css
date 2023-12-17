@@ -68,8 +68,7 @@ body::before {
     padding: 20px;
     z-index: 999;
     background-color: black;
-    border-radius: 50%;            
-    box-shadow: 0 0 20px #eee; 
+    border-radius: 50%; 
 }
 
 .logo img {
@@ -84,9 +83,9 @@ body::before {
     width: 90%;
     max-width: 420px;
     margin: 0 auto;
-    background: #232526;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #414345, #232526); 
+    background: rgba(35, 37, 38, 0.92);  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, rgba(65, 67, 69, 0.92), rgba(35, 37, 38, 0.92));  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, rgba(65, 67, 69, 0.92), rgba(35, 37, 38, 0.92));
     box-shadow: 0 0 10px rgba(0, 0, 0, .2);
     color: #fff;
     border-radius: 5px;
@@ -147,7 +146,7 @@ body::before {
     transition: 0.5s;
     background-size: 200% auto;
     color: white;            
-    box-shadow: 0 0 10px #eee;
+    box-shadow: 0 0 10px black;
     border-radius: 10px;
     display: block;
 }
