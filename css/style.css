@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    
 }
 body{
     display: flex;
@@ -12,10 +13,11 @@ body{
     margin: 0%;
     font-size: 16px;
     min-height: 100vh;
-    background-color: rgb(197, 177, 160);
+    background-color: rgb(255, 155, 155);
     background-size: cover;
     background-position: center;
     flex-direction: column;
+    
 }
 nav{
     width: 100%;
@@ -34,7 +36,7 @@ nav ul li{
 }
 nav ul li a{
     text-decoration: none;
-    color: #080404;
+    color: #fff;
     font-size: 17px;
     font-weight: 700;
     
@@ -139,6 +141,45 @@ button {
     }
     
 }
-.section-2 h1{
+.container{
+    display: flex;
+    justify-content: center;
     text-align: center;
+    flex-wrap: wrap;
+}
+
+.card{
+    background-color: #fff;
+    width: 270px;
+    height: 400px;
+    margin: 10px;
+    border-radius: 10px;
+}
+.card-image{
+    height: 150px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+.card-1{
+    background-image: url(/images/athletics.jpg);
+
+}
+.card a{
+   background-color: #070606;
+   color: #fff;
+   padding: 15px 20px;
+   display: block;
+   margin: 20px 50px; 
+}
+.card:hover{
+    background-color: rgb(236, 75, 64);
+    color: #fff;
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all 1s ease;
+}
+#section-2{
+    text-align: center;
+
 }
