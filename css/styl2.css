@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Croissant+One&family=Lobster&family=Lora:ital,wght@1,500&family=Mina:wght@700&family=Notable&family=Open+Sans:wght@300;400&family=Play&family=Poppins:wght@700&family=Rajdhani:wght@300;700&family=Rubik+Doodle+Shadow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Croissant+One&family=Lobster&family=Lora&family=Silkscreen:ital,wght@1,500&family=Mina:wght@700&family=Notable&family=Open+Sans:wght@300;400&family=Play&family=Poppins:wght@700&family=Rajdhani:wght@300;700&family=Rubik+Doodle+Shadow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
 
 * {
     margin: 0;
@@ -13,6 +15,32 @@ body{
     background-size: 700px;
     display: flex;
     flex-direction: column;
+}
+
+nav {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding: 0px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(7, 6, 6, 0.8); /* Use rgba to set opacity */
+}
+
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 700;
+    
 }
 
 body::before {
@@ -35,6 +63,7 @@ body::before {
     justify-content: center;
     text-align: center;
     overflow: hidden;
+    
 }
 #home-section .banner {
     position: absolute;
@@ -61,18 +90,13 @@ body::before {
 
 
 
-.logo {
-    max-width: 100%;
-    height: auto;
-    display: block; 
-    position:fixed;
+.logo{
+    width: 100px;
+    border-radius: 50%;
     top: 0;
-    left: 0;
-    margin: 20px;
-    z-index: 999;
-    background-color: black;
-    border-radius: 50%; 
-    padding: 10px;
+    right: 0;
+    background-color: #070606;
+    box-shadow: 10px 10px 20px black;
 }
 
 .logo img {
@@ -91,8 +115,8 @@ nav {
     width: 100%;
     position: absolute;
     top: 0;
-    left: 0;
-    padding: 20px 8%;
+    right: 0;
+    padding: 0px 8%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -114,6 +138,7 @@ nav ul li a {
 }
 
 .hero-container{
+    margin-top: 50px;
     display: flex;
     flex-direction: row;
     text-align: left;
@@ -183,8 +208,9 @@ nav ul li a {
     color: chocolate;
 }
 .description h4{
-    font-size: 4vh;
+    font-size: 3vh;
     color: antiquewhite;
+    font-family: 'Poppins', sans-serif;
 }
 
 #section-4 .heading{
