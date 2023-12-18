@@ -43,6 +43,17 @@ nav ul li a{
     
 }
 
+nav ul li a:hover{
+    text-decoration: none;
+    background: linear-gradient(45deg, #ff8a00, #e52e71);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 17px;
+    font-weight: 700;
+    
+}
+
 body::before {
     content: "";
     position: absolute;
@@ -155,6 +166,7 @@ nav ul li a {
     -webkit-text-stroke:1px #fff ;
     background: url("./images/AP-56.jpg");
     -webkit-background-clip: text;
+    background-clip: text;
     background-position: 0 0;
 }
 
@@ -169,7 +181,15 @@ nav ul li a {
     background-color: rgba(7, 6, 6, 0.8); /* Use rgba to set opacity */
     padding-top: 50px;
     padding-bottom: 70px;
+    opacity: 0;
+    transition: opacity 1s ease;
+    margin-bottom: 100px;
     
+}
+
+#section-2.fade-in {
+    opacity: 1;
+    transition: opacity 1s ease;
 }
 
 #section-2::after{
@@ -180,11 +200,12 @@ nav ul li a {
 .divider {
     background: linear-gradient(45deg, #ff8a00, #e52e71);
     -webkit-background-clip: text;
+    background-clip: text;
     color: transparent;
-    font-size: 1.5em;
+    font-size: 2em;
     font-family: 'Russo One', sans-serif;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 
@@ -192,13 +213,6 @@ nav ul li a {
     font-family: "Poppins", sans-serif;
     padding-top: 20px;
 }
-
-
-
-
-
-    
-
 
 #section-2 img{
     width: 70%;
@@ -248,6 +262,14 @@ nav ul li a {
     object-fit: cover;
 }
 
+.gdiv {
+    height: 2px;
+    background-color: #f8f8f8; /* Use your desired whitish color code */
+    border: none; /* Remove default border */
+    margin: 10px 0; /* Adjust margin as needed */
+}
+
+
 
 
     @media screen and (max-width: 600px) {
@@ -280,6 +302,9 @@ nav ul li a {
     .gradientText{
         background: linear-gradient(45deg, #ff8a00, #e52e71);
         -webkit-background-clip: text;
+        background-clip: text;
         color: transparent;
         
     }
+
+
