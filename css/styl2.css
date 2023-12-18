@@ -223,6 +223,31 @@ nav ul li a {
     font-family: 'Poppins', sans-serif;
 }
 
+#section-4 .heading h5{
+    font-family: 'Croissant One', sans-serif;
+    font-size: 10vh;
+    color: chocolate;
+}
+#carouselExample{
+    padding:5vw;
+}
+
+#section-4 {
+    opacity: 0;
+    transition: opacity 1s ease;
+    line-height: 5px;
+}
+#section-4.fade-in {
+    opacity: 1;
+    transition: opacity 1s ease;
+}
+
+.carousel-inner{
+    border-radius: 20px;
+    max-height: 80vh;
+    object-fit: cover;
+}
+
 
 
     @media screen and (max-width: 600px) {
