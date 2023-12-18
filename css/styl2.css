@@ -43,6 +43,17 @@ nav ul li a{
     
 }
 
+nav ul li a:hover{
+    text-decoration: none;
+    background: linear-gradient(45deg, #ff8a00, #e52e71);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 17px;
+    font-weight: 700;
+    
+}
+
 body::before {
     content: "";
     position: absolute;
