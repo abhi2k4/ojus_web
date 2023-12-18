@@ -50,7 +50,7 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
     z-index: -2;
 }
 
@@ -71,21 +71,9 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    object-position: bottom;
+    object-fit: cover; /* Ensures the image covers the entire container */
+    object-position: center; /* Centers the image within the container */
     z-index: -1;
-}
-
-#home-section::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 30px;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9));
-    z-index: 2;
-    backdrop-filter: blur(20px);
 }
 
 
@@ -100,7 +88,6 @@ body::before {
 }
 
 .logo img {
-
     max-width: 80px;
     height: auto;
     display: block;
@@ -125,7 +112,7 @@ nav {
 
 nav ul li {
     list-style :none;
-    display: inline-flex;
+    display: inline-block;
     margin-right: 40px;
 }
 
@@ -143,7 +130,6 @@ nav ul li a {
     flex-direction: row;
     text-align: left;
 }
-
 .hero {
     left: 0;
     display: flex;
@@ -180,18 +166,42 @@ nav ul li a {
     align-items: center;
     justify-content: center;
     text-align: left;
-    opacity: 0;
-    transition: opacity 1s ease;
+    background-color: rgba(7, 6, 6, 0.8); /* Use rgba to set opacity */
+    padding-top: 50px;
+    padding-bottom: 70px;
+    
 }
 
-#section-2.fade-in {
-    opacity: 1;
-    transition: opacity 1s ease;
+#section-2::after{
+    z-index: -1;
+    filter: blur(5px);
 }
+
+.divider {
+    background: linear-gradient(45deg, #ff8a00, #e52e71);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 1.5em;
+    font-family: 'Russo One', sans-serif;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+.subhead{
+    font-family: "Poppins", sans-serif;
+    padding-top: 20px;
+}
+
+
+
+
+
+    
 
 
 #section-2 img{
-    width:40vw;
+    width: 70%;
     height: auto;
 }
 
@@ -207,44 +217,13 @@ nav ul li a {
     font-size: 10vh;
     color: chocolate;
 }
-.description h4{
-    font-size: 3vh;
+.blurb{
+    font-size: 4vh;
     color: antiquewhite;
     font-family: 'Poppins', sans-serif;
 }
 
-#section-4 .heading{
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-}
 
-
-#section-4 .heading h5{
-    font-family: 'Croissant One', sans-serif;
-    font-size: 10vh;
-    color: chocolate;
-}
-#carouselExample{
-    padding:5vw;
-}
-
-#section-4 {
-    opacity: 0;
-    transition: opacity 1s ease;
-    line-height: normal;
-}
-#section-4.fade-in {
-    opacity: 1;
-    transition: opacity 1s ease;
-}
-
-.carousel-inner{
-    border-radius: 20px;
-    max-height: 80vh;
-    object-fit: cover;
-}
 
     @media screen and (max-width: 600px) {
 
@@ -271,8 +250,11 @@ nav ul li a {
         #section-2 .description h4 {
             font-size: 3vw;
         }
+    }
 
-        #section-4 .heading h5 {
-            font-size: 6vw;
-        }
+    .gradientText{
+        background: linear-gradient(45deg, #ff8a00, #e52e71);
+        -webkit-background-clip: text;
+        color: transparent;
+        
     }
