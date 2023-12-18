@@ -75,6 +75,7 @@ body::before {
     max-width: 100px;
     height: auto; /* Ensures the logo scales proportionally */
     display: block;
+    
 }
 .wrapper {
     line-height: 2px;
@@ -192,7 +193,7 @@ background: linear-gradient(to right, rgba(65, 67, 69, 0.92), rgba(35, 37, 38, 0
     }
 
     .input-box input {
-        font-size: 12px;
+        font-size:14px;
         padding: 12px 15px;
     }
 
@@ -210,11 +211,11 @@ background: linear-gradient(to right, rgba(65, 67, 69, 0.92), rgba(35, 37, 38, 0
     }
 
     .logo{
-        max-width: 80%;
+        max-width: 50%;
     }
 
     .logo img{
-        max-width: 80px;
+        max-width: 60px;
     }
     
     .sliding-text{

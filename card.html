@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Acme&family=Croissant+One&family=Gasoek+One&family=Lobster&family=Lora:ital,wght@1,500&family=Notable&family=Open+Sans:wght@300;400&family=Play&family=Poppins:wght@700&family=Rajdhani:wght@300;700&display=swap" rel="stylesheet">
+<style>
+    .card{
+        background: #8e9eab;
+        background: -webkit-linear-gradient(to right, #eef2f3, #afbdc8);    
+        background: linear-gradient(to right, #eef2f3, #8e9eab);
+        border: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        overflow: hidden;
+        transition: background 0.3s ease;
+    }
+
+    .card :hover{
+        background: #12c2e9;
+    background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+    background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+    width: 100%;
+    transition: background 0.3s ease;
+
+    }
+
+    .card h1{
+        justify-content: center; 
+        font-family: 'Poppins', sans-serif;
+        background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+        -webkit-background-clip: text;
+        color: transparent;
+        margin-bottom: 20px;
+        z-index: 99;
+        transition: background 0.3s ease;
+    }
+    .card:hover h1{
+        color: white;
+    }
+
+    .card img{
+        transform: rotate(45deg);
+        height: 100px;
+        margin-right: 20px;
+        z-index: -1;
+        visibility: 50%;
+        opacity: 0.6;
+    }
+
+    .card:hover img{
+        visibility: visible;
+    }
+</style>
+<body>
+    <div class="d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h1 class="card-title" >Carrom <br> Singles</h1>
+          <img alt="carrom" src="./images/carrom.png">        
+        </div>
+      </div>
+      </div>
+    </body>
+</html>
