@@ -74,17 +74,34 @@ body::before {
     justify-content: center;
     text-align: center;
     overflow: hidden;
-    
 }
-#home-section .banner {
+
+#home-section::before {
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures the image covers the entire container */
-    object-position: center; /* Centers the image within the container */
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
     z-index: -1;
+}
+
+#home-section video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: -2;
+}
+
+#home-section .content {
+    /* Additional styles for your content */
+    z-index: 1;
+    color: white; /* Adjust text color as needed */
 }
 
 
@@ -269,6 +286,11 @@ nav ul li a {
     margin: 10px 0; /* Adjust margin as needed */
 }
 
+#section-3{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
 
 
 
@@ -304,6 +326,30 @@ nav ul li a {
         -webkit-background-clip: text;
         background-clip: text;
         color: transparent;
+        
+    }
+
+    .back-video {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: -1; /* Ensure the video is behind the overlay and content */
+        width: 100%; /* Adjust dimensions as needed */
+        height: auto;
+    }
+    
+    @media  (min-aspect-ratio:16/9){
+        .back-video{
+            width: 100%;
+            height: auto;
+        }
+        
+    }
+    @media  (max-aspect-ratio:16/9){
+        .back-video{
+            width: 100%;
+            height: auto;
+        }
         
     }
 
