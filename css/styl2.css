@@ -172,6 +172,7 @@ nav ul li a {
     padding-bottom: 70px;
     opacity: 0;
     transition: opacity 1s ease;
+    margin-bottom: 100px;
     
 }
 
@@ -190,11 +191,10 @@ nav ul li a {
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-    text-decoration: overline underline;
-    font-size: 2.5em;
+    font-size: 2em;
     font-family: 'Russo One', sans-serif;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 
@@ -251,6 +251,14 @@ nav ul li a {
     object-fit: cover;
 }
 
+.gdiv {
+    height: 2px;
+    background-color: #f8f8f8; /* Use your desired whitish color code */
+    border: none; /* Remove default border */
+    margin: 10px 0; /* Adjust margin as needed */
+}
+
+
 
 
     @media screen and (max-width: 600px) {
@@ -287,3 +295,5 @@ nav ul li a {
         color: transparent;
         
     }
+
+
