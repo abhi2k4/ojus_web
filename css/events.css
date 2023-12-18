@@ -47,7 +47,7 @@ body::before {
 
 .sports-card-sm:hover::after {
     content: "Meet J.";
-    background: -webkit-linear-gradient(45deg, rgba(241, 47, 66, 1), rgba(122, 143, 211, 1));
+    background: linear-gradient(45deg, #ff8a00, #e52e71);
 }
 
 .sports-card-sm p {
@@ -55,7 +55,7 @@ body::before {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: -webkit-linear-gradient(45deg, rgba(241, 47, 66, 1), rgba(122, 143, 211, 1));
+    background: linear-gradient(45deg, #ff8a00, #e52e71);
     -webkit-background-clip: text;
     color: transparent;
     font-size: 40px;
