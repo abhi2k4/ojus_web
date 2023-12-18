@@ -98,6 +98,7 @@ body::before {
     max-height:80px;
     align-items: center;
 }
+
 nav {
     width: 100%;
     position: absolute;
@@ -155,6 +156,7 @@ nav ul li a {
     -webkit-text-stroke:1px #fff ;
     background: url("./images/AP-56.jpg");
     -webkit-background-clip: text;
+    background-clip: text;
     background-position: 0 0;
 }
 
