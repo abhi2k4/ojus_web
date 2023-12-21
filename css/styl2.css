@@ -31,7 +31,7 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.6);
     z-index: -2;
 }
 
@@ -55,6 +55,19 @@ body::before {
     height: 100%;
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
     z-index: -1;
+}
+
+nav {
+    width: 100%;
+    position: absolute;
+    margin-top: 10px;
+    display: inline-block;
+    top: 0;
+    left: 0;
+    padding: 0px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 nav ul li {
@@ -97,6 +110,7 @@ nav ul li a:hover{
 }
 
 #socials{
+    margin-bottom: 3vh;
         position: absolute;
         bottom: 20px;
         right: 20px;
@@ -125,8 +139,8 @@ nav ul li a:hover{
         transition: tranform 0.3s ease;
     }
 
-    .icons a img:hover{
-       transform: scale(1);
+    .icons a:hover img {
+        transform: scale(1.1);
     }
 
 .logo{
@@ -149,18 +163,6 @@ nav ul li a:hover{
 .header{
     max-height:80px;
     align-items: center;
-}
-nav {
-    width: 100%;
-    position: absolute;
-    margin-top: 10px;
-    display: inline-block;
-    top: 0;
-    left: 0;
-    padding: 0px 5%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
 
 
@@ -236,6 +238,7 @@ nav {
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
+    height: 50px;
 }
 
 .subhead{
@@ -320,8 +323,10 @@ nav {
 
 .sports-card-sm:hover p {
     /* color: linear-gradient(rgba(217, 217, 217, 0.98), rgba(217, 217, 217, 0)); */
-    color: #fff;
+    color: linear-gradient(45deg, #ff8a00, #e52e71);;
 }
+
+
 
 
 #section-4 .heading h5{
@@ -377,6 +382,8 @@ nav {
     width: 100vw;
     padding-top: 40px;
     color: #fff;
+    align-items: center;
+    justify-content: center;
 }
 .footer-content{
     display: flex;
@@ -409,7 +416,7 @@ nav {
     padding-right: 30px;
 }
 .socials li{
-    margin: 0 10px;
+    margin: 0 15px;
 }
 .socials a{
     text-decoration: none;
@@ -490,17 +497,28 @@ nav {
         
     }
 
-    .back-video {
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        z-index: -1;
-        width: 100%;
-        height: auto;
-    }
+    video-container {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    padding-bottom: 56.25%; /* Adjust this value to maintain the 16:9 aspect ratio (9 / 16 * 100) */
+}
+
+.back-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
     
     @media  (min-aspect-ratio:16/9){
         .back-video{
+            object-fit: fill;
             width: 100%;
             height: auto;
         }
