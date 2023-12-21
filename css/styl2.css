@@ -236,6 +236,7 @@ nav {
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
+    height: 50px;
 }
 
 .subhead{
@@ -323,14 +324,7 @@ nav {
     color: linear-gradient(45deg, #ff8a00, #e52e71);;
 }
 
-.sports-card-link:hover .sports-card-sm p::before {
-    content: "meet J";
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    color: white; /* Change the color as needed */
-}
+
 
 
 #section-4 .heading h5{
