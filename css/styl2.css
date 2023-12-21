@@ -295,7 +295,7 @@ nav {
 }
 
 .sports-card-sm:hover::after {
-    content: "Meet J.";
+    content: "";
     background: linear-gradient(45deg, #ff8a00, #e52e71);
 }
 
@@ -307,7 +307,7 @@ nav {
     background: linear-gradient(45deg, #ff8a00, #e52e71);
     -webkit-background-clip: text;
     background-clip: text;
-    color: transparent;
+    color: transparent; 
     font-size: 40px;
     font-family: Poppins, sans-serif;
     font-weight: 700;
@@ -319,7 +319,8 @@ nav {
 }
 
 .sports-card-sm:hover p {
-    color: linear-gradient(rgba(217, 217, 217, 0.98), rgba(217, 217, 217, 0));
+    /* color: linear-gradient(rgba(217, 217, 217, 0.98), rgba(217, 217, 217, 0)); */
+    color: #fff;
 }
 
 
@@ -331,6 +332,12 @@ nav {
 #carouselExample{
     padding:5vw;
 }
+
+.sports-card-sm:hover
+{
+    color: #fff;
+}
+
 
 #section-4 {
     opacity: 0;
