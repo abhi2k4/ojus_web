@@ -309,7 +309,7 @@ nav {
     background-clip: text;
     color: transparent; 
     font-size: 40px;
-    font-family: Poppins, sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 700;
     line-height: 50px;
     word-wrap: break-word;
@@ -406,6 +406,7 @@ nav {
     align-items: center;
     justify-content: center;
     margin: 1rem 0 3rem 0;
+    padding-right: 30px;
 }
 .socials li{
     margin: 0 10px;
@@ -415,12 +416,17 @@ nav {
     color: #fff;
 }
 .socials a i{
-    font-size: 1.1rem;
-    transition: color .4s ease;
-
+    font-size: 30px;
+    transition: color .4s ease;    
 }
-.socials a:hover i{
-    color: aqua;
+.socials a:hover i#insta{
+    background: -webkit-radial-gradient(33% 100% circle, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);
+    background: radial-gradient(circle at 33% 100%, #fed373 4%, #f15245 30%, #d92e7f 62%, #9b36b7 85%, #515ecf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.socials a:hover i#yt{
+    color: #cd201f;
 }
 
 .footer-bottom{
@@ -430,20 +436,20 @@ nav {
     text-align: center;
 }
 .footer-bottom p{
+    font-family: 'Croissant One', sans-serif;
     font-size: 14px;
     word-spacing: 2px;
     text-transform: capitalize;
     color: crimson;
 }
-.footer-bottom span{
+.footer-bottom span a{
+    font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
-    opacity: .4;
+    opacity: 0.6;
     font-weight: 1000;
-    color: crimson;
+    /* color: crimson; */
+    text-decoration: none;
 }
-
-
-
 
     @media screen and (max-width: 600px) {
 
