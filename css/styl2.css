@@ -320,7 +320,16 @@ nav {
 
 .sports-card-sm:hover p {
     /* color: linear-gradient(rgba(217, 217, 217, 0.98), rgba(217, 217, 217, 0)); */
-    color: #fff;
+    color: linear-gradient(45deg, #ff8a00, #e52e71);;
+}
+
+.sports-card-link:hover .sports-card-sm p::before {
+    content: "meet J";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Change the color as needed */
 }
 
 
