@@ -413,7 +413,7 @@ nav ul li a:hover{
     align-items: center;
     justify-content: center;
     margin: 1rem 0 3rem 0;
-    padding-right: 30px;
+    padding-left: 280px;
 }
 .socials li{
     margin: 0 15px;
@@ -434,6 +434,14 @@ nav ul li a:hover{
 }
 .socials a:hover i#yt{
     color: #cd201f;
+}
+.socials a:hover i#fb{
+    transform: scale(1.1); /* Increase the scale as needed */
+    color: #1877f2;
+}
+.socials a:hover i#ldn{
+    transform: scale(1.1); /* Increase the scale as needed */
+    color: #0077B5;
 }
 
 .footer-bottom{
