@@ -3,195 +3,226 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ojus 2024</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <title>OJUS SPORTS 2024</title>
+    <link rel="icon" type="image/x-icon" href="./images/logo.ico">
+    <link rel="stylesheet" href="/css/styl2.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 <body>
-    <div id="home-section">
-    <div class="zero">
-        <video autoplay loop muted plays-inline class="back-video">
-            <source src="/videos/video.mp4" type="video/mp4">
-        </video>
-       <nav>
+    //added here for backend reasons
+    <style>
+
+.sports-card-link:hover .sports-card-sm p::before {
+    content: "meet J";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+    </style>
+    <div id="home-section" class="container">
+        <div class="header">
            
-           <nav>
-            <a href="index.html"><img alt="logo" src="/images/logo.png" class="logo"></a>
-            <ul>
-             <li><a href="events.html">EVENTS</a></li>
-             <li><a href="schedule.html">SCHEDULE</a></li>
-             <li><a href="login.html">LOGIN</a></li>
+            <nav>
+                <a href="land2.html"><img alt="logo" src="/images/logo.png" class="logo"></a>
+                <ul>
+                    <li><a href="#section-3">EVENTS</a></li>
+                    <li><a href="#section-4">GALLERY</a></li>
+                    <li><a href="schedule.html">SCHEDULE</a></li>
+                    <li><a href="login.html">LOGIN</a></li>
+                   </ul>
+             </nav>
+        </div>
+        <div id="hero-container" class="hero-container">
+            <div class="zero">
+                <div class="video-container">
+                    <video autoplay loop muted plays-inline class="back-video">
+                        <source src="/videos/video.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            
+        <div class="hero">
+            <h1>2024<br</h1>
+            <h1>OJUS SPORTS</h1>
+            <h2>Radiance Of Euphoria !</h2>
+        </div>
+        <img alt="ojus-sports" src="./images/ojus_sports.png">
+        </div>
+        <div id="socials">
+            <p>Follow Us On:</p>
+            <div class="icons">
+                <a href="https://www.instagram.com/ojus_apsit/" ><img alt="instagram" src="images/Instagram.png"></a>
+                <a href="https://www.facebook.com/ojusapsit/" ><img alt="instagram" src="images/Facebook.png"></a>
+                <a href="https://www.youtube.com/@ojus-radianceofeuphoria5292" ><img alt="instagram" src="images/Youtube.png"></a>
+                <a href="https://www.linkedin.com/company/ojus-apsit/about/" ><img alt="instagram" src="images/LinkedIn.png"></a>
+            </div>
+        </div>
+    </div>
+
+    <hr class="gdiv">
+
+
+      <div class="divider"> 
+            ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT ABOUT 
+   </div>
+
+    <div id="section-2">
+        <div class="about-img">
+            <img alt="ojus-logo" src="./images/logo.png">
+        </div>
+        <div class="description">
+            
+            <h4 class="blurb">OJUS - Radiance of Euphoria is an intercollegiate festival hosted annually by the students of APSIT. It's an amalgamation of Sports, Literature & Cultural festival comprising of intellectual as well as fun & creative events with a variety of games and entertainment shows. It's not just a festival of various colorful events but a platform where students freely express themselves and our hidden gems come out with their talents.</h4>
+            <h4 class="subhead gradientText"> When:
+            </h4>
+            <h4 class="blurb">2nd to 4th Jan</h4>
+            <h4 class="subhead gradientText"> Where:
+            </h4>
+            <h4 class="blurb"> APSIT Campus</h4>
+
+        </div>
+        
+    </div>
+
+    <hr class="gdiv">
+
+    <div class="divider">
+
+        EVENTS EVENTS EVENTS EVENTS EVENTS EVENTS EVENTS EVENTS EVENTS EVENTS
+
+</div>
+    <div id="section-3">
+        <div class="card-wrapper">
+            <a href="events-detlails.html" class="sports-card-link">
+                <div class="sports-card-sm">
+                    <p>Event Info.</p>
+                </div>
+            </a>
+
+            <a href="events-detlails.html" class="sports-card-link">
+                <div class="sports-card-sm">
+                    <p>Event Info.</p>
+                </div>
+            </a>
+
+            <a href="events-detlails.html" class="sports-card-link">
+                <div class="sports-card-sm">
+                    <p>Event Info.</p>
+                </div>
+            </a>
+
+            <a href="events-detlails.html" class="sports-card-link">
+                <div class="sports-card-sm">
+                    <p>Event Info.</p>
+                </div>
+            </a>
+    
+          </div>
+    </div>
+
+    <hr class="gdiv">
+
+    <div class="divider">
+
+        GALLERY GALLERY GALLERY GALLERY GALLERY GALLERY GALLERY GALLERY 
+
+</div>
+
+  
+
+    <div id="section-4">
+        <div class="heading">
+        </div>
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./images/carousel/ojussports.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/carousel/opening.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/carousel/kabaddi.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/carousel/kabaddi.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./images/carousel/kabaddi.jpg" class="d-block w-100" alt="...">
+              </div>
+              
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+            </div>
+         
+    </div>
+   
+    <hr class="gdiv">
+  <div> <footer>
+        <div class="footer-content">
+            <h3>OJUS 2024</h3>
+            <p>Ojus - Radiance of Euphoria an intercollegiate festival hosted annually by the students of APSIT.</p>
+            <ul class="socials">
+                <li><a href="https://www.instagram.com/ojus_apsit/"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://www.facebook.com/ojusapsit/"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://www.youtube.com/@ojus-radianceofeuphoria5292"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="https://www.linkedin.com/company/ojus-apsit/about/"><i class="fa fa-linkedin-square"></i></a></li>
             </ul>
-         </nav>
-    </div>
-    <div class="content">
-        <h1>Ojus 2k24</h1>
-        <a href="Explore">Explore</a>
-        <ul>
-             <a href="https://www.instagram.com/ojus_apsit/" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
-             <a href="https://www.youtube.com/@ojus-radianceofeuphoria5292" target="_blank" rel="noopener"><i class="fab fa-youtube"></i></a>
-             <a href="https://www.linkedin.com/company/ojus-apsit/" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
-        </ul> 
-
-    </div>
-   </div>
-
- 
-
-   <div id="section-2">
-        <h1>About Ojus</h1>
-        <div class="ojuspic">
-            <img src="/images/ojus_sports.png" alt="">
-        </div><br>
-        <p>Ojus - Radiance of Euphoria is an intercollegiate festival hosted annually by the students of APSIT. It's an amalgamation of Sports, Literature & Cultural festival comprising of intellectual as well as fun & creative events with a variety of games and entertainment shows. It's not just a festival of various colorful events but a platform where students freely express themselves and our hidden gems come out with their talents.</p>
-        <ul>
-            <li><h4>WHERE:</h4>A. P. Shah Institute of Technology, Thane
-            </li>
-            <br>
-            <li>
-                <h4>WHEN:</h4>
-                Jan 2024
-            </li>
-            <h1>EVENTS</h1>
-        </ul>
-        <section class="container">
-            <div class="card">
-                <div class="card-image card-1"></div>
-                <h3>ATHLETICS (Boys- 100m)</h3>
-                <br><br>
-                <p>The Athletic events For OJUS 2024 are here so pace y....</p>
-                <a href="#">View Event</a>
-            </div>
-            <div class="card">
-                <div class="card-image card-1"></div>
-                <h3>ATHLETICS (Boys- Relay(4x100m))</h3>
-                <br>
-                <p>The Athletic events For OJUS 2024 are here so pace y....</p>
-                <a href="#">View Event</a>
-            </div>
-            <div class="card">
-                <div class="card-image card-1"></div>
-                <h3>ATHLETICS (Girls- 100m)</h3>
-                <br><br>
-                <p>The Athletic events For OJUS 2024 are here so pace y....</p>
-                <a href="#">View Event</a>
-            </div>
-           </section>
-           <section class="container">
-            <div class="card">
-                <div class="card-image card-1"></div>
-                <h3>ATHLETICS (Girls- Relay(4x100m))</h3>
-                <br><br>
-                <p>The Athletic events For OJUS 2024 are here so pace y....</p>
-                <a href="#">View Event</a>
-            </div>
-            <div class="card">
-                <div class="card-image card-1"></div>
-                <h3>BADMINTON (Boys- Singles)</h3>
-                <br>
-                <p>If you have got control, strength, mind play and mea....</p>
-                <a href="#">View Event</a>
-            </div>
-            <div class="card">
-                <div class="card-image card-1"></div>
-                <h3>BADMINTON (Boys- Doubles)</h3>
-                <br><br>
-                <p>If you have got control, strength, mind play and mea....</p>
-                <a href="#">View Event</a>
-            </div>
-           </section>
-           <section class="container">
-            <div class="card">
-                <div class="card-image card-1"></div>
-                <h3>BADMINTON (Girls- Singles)</h3>
-                <br><br>
-                <p>If you have got control, strength, mind play and mea....</p>
-                <a href="#">View Event</a>
-            </div>
-            <div class="card">
-                <div class="card-image card-1"></div>
-                <h3>BADMINTON (Girls- Doubles)</h3>
-                <br>
-                <p>If you have got control, strength, mind play and mea....</p>
-                <a href="#">View Event</a>
-            </div>
-            <div class="card">
-                <div class="card-image card-1"></div>
-                <h3>TABLE TENNIS (Boys- Singles)</h3>
-                <br><br>
-                <p>The game of table tennis is a pastime that involves ....</p>
-                <a href="#">View Event</a>
-            </div>
-           </section>
-           <section class="container">
-            <div class="card">
-                <div class="card-image card-1"></div>
-                <h3>TABLE TENNIS (Boys- Doubles)</h3>
-                <br><br>
-                <p>The game of table tennis is a pastime that involves ....</p>
-                <a href="#">View Event</a>
-            </div>
-            <div class="card">
-                <div class="card-image card-1"></div>
-                <h3>TABLE TENNIS (Girls- Singles)</h3>
-                <br>
-                <p>The game of table tennis is a pastime that involves ....</p>
-                <a href="#">View Event</a>
-            </div>
-            <div class="card">
-                <div class="card-image card-1"></div>
-                <h3>TABLE TENNIS (Girls- Doubles)</h3>
-                <br><br>
-                <p>The game of table tennis is a pastime that involves ....</p>
-                <a href="#">View Event</a>
-            </div>
-           </section>
-           <section class="container">
-            <div class="card">
-                <div class="card-image card-1"></div>
-                <h3>CARROM (Boys- Singles)</h3>
-                <br><br>
-                <p>Carrom teaches us the value of a chance and the powe....</p>
-                <a href="#">View Event</a>
-            </div>
-            <div class="card">
-                <div class="card-image card-1"></div>
-                <h3>CARROM (Boys- Doubles)</h3>
-                <br>
-                <p>Carrom teaches us the value of a chance and the powe....</p>
-                <a href="#">View Event</a>
-            </div>
-            <div class="card">
-                <div class="card-image card-1"></div>
-                <h3>CARROM (Girls- Singles)</h3>
-                <br><br>
-                <p>Carrom teaches us the value of a chance and the powe....</p>
-                <a href="#">View Event</a>
-            </div>
-           </section>
-           <section class="container">
-            <div class="card">
-                <div class="card-image card-1"></div>
-                <h3>CARROM (Girls- Doubles)</h3>
-                <br><br>
-                <p>Carrom teaches us the value of a chance and the powe....</p>
-                <a href="#">View Event</a>
-            </div>
-            <div class="card">
-                <div class="card-image card-1"></div>
-                <h3>CHESS (Boys)</h3>
-                <br>
-                <p>Here's presenting you a mind-boggling game of chess.....</p>
-                <a href="#">View Event</a>
-            </div>
-            <div class="card">
-                <div class="card-image card-1"></div>
-                <h3>CHESS (Girls)</h3>
-                <br><br>
-                <p>Here's presenting you a mind-boggling game of chess.....</p>
-                <a href="#">View Event</a>
-            </div>
-           </section>
-   </div>
-    <script src="https://kit.fontawesome.com/2af6f44d8d.js" crossorigin="anonymous"></script>
+        </div>
+        <div class="footer-bottom">
+            <p>copyright &copy;2024 ojus. designed by <span><a href="#">Ojus tech team👨‍💻</a></span></p>
+        </div>
+    </footer></div>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script>
+    document.getElementById('menu-icon').addEventListener('click', function() {
+        document.getElementById('menu').classList.toggle('show');
+    });
+</script>
+<script>
+
+   document.addEventListener('DOMContentLoaded', function () {
+    var section2 = document.getElementById('section-2');
+    var section3 = document.getElementById('section-4');
+    var windowHeight = window.innerHeight;
+
+    function fadeInSection(element) {
+        var sectionTop = element.getBoundingClientRect().top;
+
+        if (sectionTop < windowHeight / 2) {
+            element.classList.add('fade-in');
+        } else {
+            element.classList.remove('fade-in');
+        }
+    }
+
+    function fadeOutSection(element) {
+        var sectionTop = element.getBoundingClientRect().top;
+
+        if (sectionTop > windowHeight * 1.5 || sectionTop < -windowHeight / 2) {
+            element.classList.remove('fade-in');
+        }
+    }
+
+    window.addEventListener('scroll', function () {
+        fadeInSection(section2);
+        fadeOutSection(section2);
+
+        fadeInSection(section3);
+        fadeOutSection(section3);
+    });
+});
+
+</script>
+<script src="https://kit.fontawesome.com/2af6f44d8d.js" crossorigin="anonymous"></script>
 </html>
