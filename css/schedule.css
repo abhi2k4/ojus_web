@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Croissant+One&family=Lobster&family=Lora:ital,wght@1,500&family=Mina:wght@700&family=Notable&family=Open+Sans:wght@300;400&family=Play&family=Poppins:wght@700&family=Rajdhani:wght@300;700&family=Rubik+Doodle+Shadow&family=Russo+One&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -40,6 +41,7 @@ body::before {
 }
 
 .timeline_info h2 {
+  font-family: 'Lora', sans-serif;
   font-size: 32px;
   text-transform: uppercase;
 }

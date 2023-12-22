@@ -48,6 +48,8 @@ body::before {
 }
 
 section{
+    display:inline-flex;
+    flex-direction: column;
     margin-top: 10px;
     padding: 6% 8%;
 
@@ -68,7 +70,6 @@ section{
     margin-left: 30px;
     border-radius: 12px 0 0 0;
     max-width: 100%;
-    width: 560vw;
     height: auto;
     padding: none;
 }
@@ -91,7 +92,7 @@ section{
     border: none;
     transition: 0.5s;
     background-size: 200% auto;
-    color: white;
+    color: aliceblue;
     border-radius: 10px;
     display: block;
     cursor: pointer;
@@ -99,7 +100,7 @@ section{
 
 .submit button:hover {
     background-position: right center;
-    color: #fff;
+    color: aliceblue;
     text-decoration: none;
 }
 
@@ -164,7 +165,7 @@ hr{
 }
 @media(max-width:1385px){
     section{
-        padding: 4% 4%;
+        padding: 5% 5%;
         transition: .3s;
     }
     .main-img img{
@@ -187,7 +188,13 @@ hr{
     background-size: 500px;
 }
 
+#back-to-home{
+    width: 93.5%;
+}
+
     .events{
+        padding: 10px;
+        margin-top: 50px;
         grid-template-columns: 1fr;
         height: 100%;
 
