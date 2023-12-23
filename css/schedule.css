@@ -15,6 +15,15 @@ body{
   display: flex;
   flex-direction: column;
   font-family: 'Roboto' , sans-serif;
+  overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+  width: 0px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: transparent;
 }
 
 body::before {
@@ -27,11 +36,24 @@ body::before {
   background-color: rgba(0, 0, 0, 0.6);
   z-index: -2;
 }
+#back-to-home {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  background: linear-gradient(45deg, #ff8a00, #d50f75); 
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fffffffe;
+  font-size: 16px;
+  margin-bottom: 10px;
+  z-index: 99;
+}
 
 .timeline {
   max-width: 1050px;
   width: 90%;
-  margin: 50px auto;
+  margin: 100px auto;
 }
 
 .timeline_info {
@@ -82,7 +104,7 @@ body::before {
   color: #fff;
   padding: 15px;
   position: relative;
-  border-radius: 21px;
+  border-radius: 21px 21px 0 0;
 
 }
 
@@ -232,6 +254,7 @@ body::before {
 }
 
 @media (max-width: 700px) {
+  
   .timeline_card {
     width: 100%;
     margin-bottom: 30px;
