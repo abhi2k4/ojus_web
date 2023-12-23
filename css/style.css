@@ -77,15 +77,19 @@ nav ul li a:hover{
 
 nav {
     width: 100%;
-    position: absolute;
-    margin-top: 10px;
-    display: inline-block;
+    position: fixed; 
     top: 0;
     left: 0;
-    padding: 0px 5%;
+    padding: 5px 5% 5px 5%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    transition: background-color 0.3s ease;
+    z-index: 98;
+}
+
+nav.scrolled {
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 nav ul li {
@@ -161,7 +165,7 @@ nav ul li a {
     }
     
     .menu-icon.open {
-        transform: rotate(180deg);
+        transform: rotate(90deg);
     }
     
     @keyframes fadeIn {
@@ -536,7 +540,7 @@ nav ul li a {
 }
 
 footer{
-    background-color:rgba(0, 0, 0, 0.8)
+    background-color:rgba(0, 0, 0, 0.5);
 
 }
 
@@ -544,7 +548,6 @@ footer{
     position: absolute;
     bottom: 0;
     left: 0;
-    background: #111;
     height: auto;
     width: 100vw;
     padding-top: 40px;
