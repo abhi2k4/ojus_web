@@ -303,6 +303,13 @@ window.addEventListener('scroll', function() {
     
     menu.classList.toggle('show');
     menuIcon.classList.toggle('open');
+
+    window.onscroll = () =>
+    {
+        menu.classList.remove('show');
+        menuIcon.classList.remove('open');
+    }
+
 }
 
 

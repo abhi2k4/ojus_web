@@ -167,7 +167,7 @@ nav ul li a {
     .menu-icon.open {
         transform: rotate(90deg);
     }
-    
+
     @keyframes fadeIn {
         from {
             opacity: 0;
