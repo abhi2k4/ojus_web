@@ -46,6 +46,7 @@ body::before {
     -webkit-background-clip: text;
     background-clip: text;
     z-index: -1;
+    overflow: hidden;
 }
 
 @keyframes slideText {
@@ -222,4 +223,69 @@ background: linear-gradient(to right, rgba(65, 67, 69, 0.92), rgba(35, 37, 38, 0
     .sliding-text{
         font-size: 75px;
     }
+}
+
+.scrolling-text {
+    background: linear-gradient(to bottom, #434343, #000000);
+    font-size: 100px;
+    
+    white-space: nowrap;
+    top: 50%;
+    left: 0;
+    white-space: nowrap;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    z-index: 2;
+}
+
+.m-scroll {
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    background-color: rgb(0, 0, 0);
+    overflow: hidden;
+    z-index: 1;
+}
+
+.m-scroll__title {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 100%;
+    white-space: nowrap;
+    transform: scale(2);
+    transition: all 1s ease;
+}
+
+.m-scroll__title > div {
+    display: flex;
+    animation: scrollText 15s infinite linear;
+}
+
+.m-scroll__title h1 {
+    margin: 0;
+    font-size: 140px;
+    color: rgba(255, 255, 255, 1);
+    transition: all 2s ease;
+}
+
+.m-scroll__title a {
+  font-family: 'Notable', sans-serif;
+    text-decoration: none;
+    background: linear-gradient(to bottom, #434343, #282727);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+@keyframes scrollText {
+    from { transform: translateX(0%); }
+    to { transform: translateX(-50%); }
 }
