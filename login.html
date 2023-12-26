@@ -36,7 +36,7 @@
                 <input type="tel" id="username" name="username" required oninput="this.value = this.value.replace(/[^0-9]/g, '');" required pattern="\d*" placeholder="Moodle ID" required >
             </div>
             <div class="input-box">
-                <input class="password" type="date" id="password" name="password" placeholder="DD-MM-YYYY" required>
+                <input class="password" type="numeric" id="password" name="password" placeholder="DD-MM-YYYY" required>
                 <span class="input__icon-wrapper">
                     <i class="input__icon ri-eye-off-line"></i>
                   </span><br>
@@ -68,7 +68,7 @@
     var slidingText = document.querySelector('.sliding-text');
     slidingText.style.left = '-100%';
     slidingText.style.top = 'calc(50% - ' + (numberOfLines * 65) + 'px)';
-    slidingText.style.animationDuration = numberOfLines * 4 + 's';
+    slidingText.style.animationDuration = numberOfLines * 8 + 's';
     slidingText.style.animationIterationCount = 'infinite';
 });
 

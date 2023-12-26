@@ -29,9 +29,7 @@
   display: block;
   padding: 30px 20px;
   background-color: #121212;
-
   overflow: hidden;
-
   position: relative;
 }
 .ag-courses-item_link:hover,
