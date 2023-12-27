@@ -264,43 +264,6 @@ window.addEventListener('scroll', function() {
 });
 </script>
 <script>
-    document.addEventListener('DOMContentLoaded', function () {
-        var section2 = document.getElementById('section-2');
-        var section3 = document.getElementById('section-3');
-        var section4 = document.getElementById('section-4');
-        var windowHeight = window.innerHeight;
-
-        function fadeInSection(element) {
-            var sectionTop = element.getBoundingClientRect().top;
-
-            if (sectionTop < windowHeight / 2) {
-                element.classList.add('fade-in');
-            } else {
-                element.classList.remove('fade-in');
-            }
-        }
-
-        function fadeOutSection(element) {
-            var sectionTop = element.getBoundingClientRect().top;
-
-            if (sectionTop > windowHeight * 1.5 || sectionTop < -windowHeight / 1) {
-                element.classList.remove('fade-in');
-            } 
-        }
-
-        window.addEventListener('scroll', function () {
-            fadeInSection(section2);
-            fadeOutSection(section2);
-
-            fadeInSection(section3);
-            fadeOutSection(section3);
-
-            fadeInSection(section4);
-            fadeOutSection(section4);
-        });
-    });
-</script>
-<script>
     function toggleMenu() {
     const menu = document.querySelector('nav ul');
     const menuIcon = document.querySelector('.menu-icon');
