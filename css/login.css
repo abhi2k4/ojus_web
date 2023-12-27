@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Acme&family=Croissant+One&family=Gasoek+One&family=Lobster&family=Lora:ital,wght@1,500&family=Notable&family=Open+Sans:wght@300;400&family=Play&family=Poppins:wght@300&family=Rajdhani:wght@300;700&display=swap');
 
 * {
@@ -46,7 +47,6 @@ body::before {
     -webkit-background-clip: text;
     background-clip: text;
     z-index: -1;
-    overflow: hidden;
 }
 
 @keyframes slideText {
@@ -73,6 +73,82 @@ body::before {
 }
 
 .logo img {
+    max-width: 100px;
+    height: auto;
+    display: block;
+    
+}
+.wrapper {
+    line-height: 2px;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    max-width: 420px;
+    margin: 0 auto;
+    background: rgba(35, 37, 38, 0.92);
+    background: -webkit-linear-gradient(to right, rgba(65, 67, 69, 0.92), rgba(35, 37, 38, 0.92));
+    background: linear-gradient(to right, rgba(65, 67, 69, 0.92), rgba(35, 37, 38, 0.92));
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: #fff;
+    border-radius: 5px;
+    padding: 30px 20px;
+}
+
+.wrapper h1 {
+    font-size: 28px;
+    text-align: center;
+    padding: 20px;
+}
+
+.input-box {
+    width: 100%;
+    height: 50px;
+    position: relative;
+    margin-top: 15px;
+}
+
+.input-box input {
+    font-family: 'Acme', sans-serif;
+    font-weight: 300;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 5px;
+    font-size: 16px;
+    color: hsl(0, 0%, 100%);
+    padding: 15px 20px;
+}
+
+.remember-forgot {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;   
+}
+
+.btn {
+    font-family: 'Play', sans-serif;
+    font-size: 22px;
+    font-weight: 200;
+    background-image: linear-gradient(to right, #e52d27 0%, #b31217  51%, #e52d27  100%);
+    width: 60%;
+    height: 45px;
+    border: none;
+    outline: none;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 10px black;
     border-radius: 10px;
     display: block;
     cursor: pointer;
@@ -147,69 +223,4 @@ body::before {
     .sliding-text{
         font-size: 75px;
     }
-}
-
-.scrolling-text {
-    background: linear-gradient(to bottom, #434343, #000000);
-    font-size: 100px;
-    
-    white-space: nowrap;
-    top: 50%;
-    left: 0;
-    white-space: nowrap;
-    color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
-    z-index: 2;
-}
-
-.m-scroll {
-    display: flex;
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    margin: auto;
-    background-color: rgb(0, 0, 0);
-    overflow: hidden;
-    z-index: 1;
-}
-
-.m-scroll__title {
-    display: flex;
-    position: absolute;
-    top: 0;
-    left: 0;
-    align-items: center;
-    justify-content: flex-start;
-    width: 100%;
-    height: 100%;
-    white-space: nowrap;
-    transform: scale(2);
-    transition: all 1s ease;
-}
-
-.m-scroll__title > div {
-    display: flex;
-    animation: scrollText 15s infinite linear;
-}
-
-.m-scroll__title h1 {
-    margin: 0;
-    font-size: 140px;
-    color: rgba(255, 255, 255, 1);
-    transition: all 2s ease;
-}
-
-.m-scroll__title a {
-  font-family: 'Notable', sans-serif;
-    text-decoration: none;
-    background: linear-gradient(to bottom, #434343, #282727);
-    color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
-}
-
-@keyframes scrollText {
-    from { transform: translateX(0%); }
-    to { transform: translateX(-50%); }
 }
