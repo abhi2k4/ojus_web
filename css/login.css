@@ -75,6 +75,7 @@ body::before {
 .logo img {
     max-width: 100px;
     height: auto;
+    
     display: block;
     
 }
