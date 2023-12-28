@@ -118,7 +118,7 @@ nav ul li a {
     margin-top: -20px;
     position: absolute;
     right: 0;   
-    top: 0;
+    bottom: 0;
     z-index: -2;
     min-height: 100vh;
     object-fit: cover;
@@ -137,7 +137,7 @@ video-container {
 
 #home-section .content {
     z-index: 1;
-    color: white; /* Adjust text color as needed */
+    color: white;
 }
 
 #socials{
@@ -226,10 +226,9 @@ video-container {
 }
 
 .hero h1,h2{
-    font-family: 'Archivo Black', sans-serif;
+    font-family: 'Rubik Doodle Shadow', sans-serif;
     color: transparent;
-    background: linear-gradient(45deg, #ff8a00, #e52e71); 
-    -webkit-text-stroke:1px #fff ;
+    -webkit-text-stroke:1px #ffffff ;
     -webkit-background-clip: text;
     background-clip: text;
     background-position: 0 0;
@@ -286,8 +285,6 @@ video-container {
     font-family: 'Poppins', sans-serif;
 }
 
-
-
 .card-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -299,6 +296,25 @@ video-container {
     margin-bottom: 40px;
 }
 
+.btn-group{
+    opacity: 0.8;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    left: 25%;
+    border-radius:15px ;
+}
+
+.buttons{
+    border-width: 0;
+    background-color: #171717;
+}
+
+.buttons h6{
+    font-size: 14px;
+    color: aliceblue;
+    padding: 2vh;
+}
 
 #section-4 .heading h5{
     font-family: 'Croissant One', sans-serif;
@@ -533,7 +549,7 @@ footer{
         #socials img{
             max-height: 40px;
             width: auto;
-        }-
+        }
     
         .hero h1 {
             font-size: 20vw;
