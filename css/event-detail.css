@@ -205,3 +205,56 @@ hr{
 
 }
 
+@media (max-width: 768px) {
+    body {
+        background-size: 300px;
+    }
+
+    section {
+        padding: 8% 5%;
+    }
+
+    .events {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .main-img img {
+        margin: 0;
+        border-radius: 12px;
+    }
+
+    .submit button {
+        width: 80%;
+    }
+
+    .text h1 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    hr {
+        width: 50%;
+    }
+
+    .last-text {
+        flex-direction: column;
+    }
+
+    .text1,
+    .text2,
+    .text3 {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    section {
+        padding: 10% 5%;
+    }
+
+    .main-img img {
+        border-radius: 0;
+    }
+}
