@@ -1,43 +1,68 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
+    background-image: url(/images/doodles-bg.png);
     background-color: #f4f4f4;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
 }
 
-.team-member {
-    background-color: #fff;
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    background-color: rgba(7, 6, 6, 0.8);
+  color: antiquewhite;
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+}
+
+h1 {
+    color: chocolate;
+}
+
+.top-sections,
+.bottom-sections {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.section-two,
+.section-three,
+.section-four,
+.section-five,
+.section-six {
+    background-color: beige;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 20px; 
+    padding: 20px;
     text-align: center;
+    margin: 15px;
+    flex: 1;
 }
-
-.team-member img {
+.top-sections img{
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    object-fit: cover;
-    margin-bottom: 10px;
+    max-width: 50%;
+    height: auto;
+}
+.bottom-sections img{
+    border-radius: 50%;
+    max-width: 50%;
+    height: auto;
 }
 
-.social-links {
-    display: flex;
-    justify-content: center;
-    margin-top: 15px;
-}
-
-.social-links a {
-    display: inline-block;
-    margin: 0 10px;
-    text-decoration: none;
-    color: #333;
-}
-
-.social-links a:hover {
-    color: #007bff;
+#back-to-home {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    background: linear-gradient(45deg, #ff8a00, #d50f75); 
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fffffffe;
+    font-size: 16px;
 }
