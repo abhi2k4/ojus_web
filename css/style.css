@@ -175,7 +175,11 @@ video-container {
     }
 
 .logo{
+<<<<<<< Updated upstream
     position:static;
+=======
+    position: static;
+>>>>>>> Stashed changes
     width: 12vh;
     border-radius: 50%;
     margin-top: 0.5rem;
