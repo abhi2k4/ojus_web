@@ -331,14 +331,16 @@ video-container {
 
   .btn-group:after {
     content: "";
-    clear: both;
-    display: table;
     background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
   }
   
   .btn-group button:not(:last-child) {
-    border-right: none; /* Prevent double borders */
-  }
+    border-right: 1px solid rgb(221, 178, 4); 
+}
+
+.btn-group button:nth-child(3) {
+    border-right: 1px solid rgb(221, 178, 4); 
+}
   .btn-group button:hover {
     
     background: linear-gradient(45deg, #ff8a00, #d50f75);
@@ -355,6 +357,7 @@ video-container {
 
 #section-4 {
     line-height: 5px;
+    margin-top: 20vh;
 }
 
 .carousel-inner{
