@@ -14,10 +14,10 @@ body {
 
 header {
     background-color: rgba(7, 6, 6, 0.8);
-  color: antiquewhite;
-  padding: 20px;
-  margin: 20px;
-  text-align: center;
+    color: antiquewhite;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
 }
 
 h1 {
@@ -43,6 +43,7 @@ h1 {
     text-align: center;
     margin: 15px;
     flex: 1;
+    transition: transform 0.3s;
 }
 .top-sections img{
     border-radius: 50%;
@@ -55,6 +56,15 @@ h1 {
     height: auto;
 }
 
+.section-two:hover,
+.section-three:hover,
+.section-four:hover,
+.section-five:hover,
+.section-six:hover {
+    cursor: pointer;
+    transform: scale(1.1); /* Increase the size on hover */
+}
+
 #back-to-home {
     position: fixed;
     top: 15px;
@@ -65,4 +75,23 @@ h1 {
     cursor: pointer;
     color: #fffffffe;
     font-size: 16px;
+}
+
+/* Custom ScrollBar */
+html::-webkit-scrollbar
+{
+    width: 15px;
+}
+html::-webkit-scrollbar-track
+{
+    background: transparent;
+}
+html::-webkit-scrollbar-thumb
+{
+    background: #fe5b3d;
+    border-radius: 80px;
+}
+section
+{
+    pad: 50px 100px;
 }
