@@ -8,28 +8,14 @@
 }
 body{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     min-height: 100vh;
    background-image: url("./../images/doodles-bg.png");
 }
-.team{
-    margin: 75px 0;
-}
-h1{
-    text-align: center;
-    color: white;
-    font-weight: bold;
-    padding-bottom: 10px;
-}
-h1:after{
-    content: '';
-    display: block;
-    height: 3px;
-    width: 150px;
-    margin: 10px auto;
-}
+
 section{
     position: relative;
 }
@@ -45,8 +31,8 @@ section{
 }
 .container .card{
     position: relative;
-    width: 300px;
-    height: 400px;
+    width: 230px;
+    height: 330px;
     background: rgb(119, 78, 78);
     margin: 20px;
     box-shadow: 0 15px 35px rgb(0, 0, 0.2);
@@ -114,4 +100,12 @@ section{
 .container .card .sci li a {
     color: white;
     font-size: 24px;
+}
+h1{
+    text-align: center;
+    margin-top: 5vh;
+    color: white;
+}
+h2{
+    color: white;
 }
